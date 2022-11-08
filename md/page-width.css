@@ -1,0 +1,77 @@
+/*.markdown-source-view.mod-cm6.is-line-wrap.is-readable-line-width .cm-line:not(.HyperMD-table-row) {
+    max-width: 2000px; /* 默认最大是700px，所以一定要带上，只要比width大就行。 */
+/*    width: 300px;         /* 怎么舒服怎么来调整 */
+/*}*/
+body {
+    --file-line-width: 900px;
+}
+body.minimal-theme {
+    --max-width: 100% !important;
+    --line-width: 52rem !important;
+}
+
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer  {
+    max-width: 2000px;
+    width: 900px;
+}
+
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-content {
+  max-width: 900px;
+}
+
+/* MacOS风格的zhu'ti */
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+    max-width: var(--max-width);
+    width: var(--line-width);
+/*    max-width: 2000px;
+    width: 900px;*/
+}
+
+
+code[class*='language-'], pre[class*='language-'] {
+    white-space: pre !important;
+}
+
+
+
+/*.nav-folder-title-content {
+    display: flex;
+    align-items: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex-grow: 1;
+    padding-left: 4px;
+}*/
+
+
+/*.nav-folder-title-content {
+    display: flex;
+    align-items: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex-grow: 1;
+    padding-left: 4px;
+}*/
+
+/*.nav-file-title-content, .nav-folder-title-content {
+    display: inline-block;
+    overflow-wrap: anywhere;
+    overflow: hidden;
+    white-space: var(--nav-item-white-space);
+    text-overflow: ellipsis;
+}
+*/
+/*.nav-file-title-content, .nav-folder-title-content {
+    argin-right: 5px;
+    position: relative;
+    top: -1px;
+    content: " ";
+    display: inline-block;
+    width: var(--svg-l);
+    height: var(--svg-l);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASrSURBVHgB7VhNiB1FEK7qebubzSa+jT+7ugfBH0IURMzNnPXsQRAPevaSo5cIot6EnBUPGuJBD169KEQUNCDBTRAE2cOiiTEvP4v7zC7G92amy+qZ/qnunsk7mD0lDf2mp7q66qufrul+APfavXYXNEzeF7jPz1izA3vcPKj9wwePHn39xJuLh1Yfx0IBaEPVnomAaXVdj//cXD93+t0PmLQBe9QcqCMvvHX61MrhZ58HtCQKTCQYiV+2/9j4+cJnJ9+5tvHTV0yawB6Beu3VT9Y/BVTKYdE8wNZFcZAtw3R3569L6998Pjp/5tvRL2cvw/9rN7j/loJ64+WPz39U1gQVd02QQycxMGjZZUQQUJsHR5h4MfI8gp1XLW8kxqo1PIa3+md7dOHU2ye3fv3xQyZPBlat2v1Xwy3uZVWzYEs1whSGUPKTsPnhKc4yZUU7pehUWQDWOlTB1YY3QDIyEObmh48ceeXE8R/ee+ksT5xzoDilEZ57eg3uP7QEC3MD8HIaQ/mnASNyC+1YhLcZUrDBOrR5Ghbd2mMc2vAY0JNpDVeu34TN3+lRJh2OQD31xMMwHC6BKgrQqLgbQeiVoFVSkRXqiRAauRBR8BhCCJ2NX22ZG4ADhNWVIQzm1OAMwKKZ8aAOHNjH3kEo2EWqMQ09EJlihVXirI1a4kYlyCTGRqaJjDJ5afXtX1zwYpS00lkuHZApph66aAqFAykHRBQ8Z+2HwaDIQbUMzX64rUJhhleUjilhyCpKFwG7VJhJs52JOjU6K53GLgDOA9E6TBJfTGOPIBXpRwTJh0lVjwBA3JwCSiaJctCUyCO5rSUoktKtN9129ngTL8lxWvihA3Taw1y8UqXSDRCikITOUqLZiqX3XAI72al33AKi3Osqk5jE2FsmtjjlbCHnIHhZUyiw3hicbdxAWga2cDvtqVUSUQpM5lIXaA+eAn/IY+pO9HYhgfzGptakOyttszzgeNxAg6v70F8SUMYi4UXIY3/bwwTk66PkxnCAwER4XArtlxNFAhLkgLLalyiHjuTV0F1S2s0UF+yoortjRZNW2K84fZe0KPF7eP0aazyI0hOByip1h5TUW+JzGdcfzMPY1dyRBpH6K7rbyk0IdaBLni6gURfucRW8r9jKit0ZPpNIJPicp9zipCIIIdT7WREc8Zhij1KyKJw8dTvZdE3B/SKstR3XmAqm6DupRUnRAo38QmBTEvg+wMy11ZuBQtCiDGvhcotAQ3O08Qoa5S0Y4+7mpGpjh2Kd240SWPTOFwI+53LPQdFkUkLNgEq+DRTcw3cLbZ6RVQq+LMtQRvlmAWqkLIcw8mbrqarSMJ1OdQqq2rkxGi+vrC3rwoSPPWVvKlKZuwtGOSWOEi2dmrqjrIvIz3Q0akHpWsPfVy9eZ8rYkN0ZtBhfvXRw9ZljT+q5ffMl3w6mBj33iXvW7bO0z2nJvTZ83Ou6eZ/Y+crcUqqW5uZLK6uVXbcyrYzta1dufv3+8S92t0ZfMpYtacKL3I8trz320PzSfT7X/P7U4l1DdiyOaDqZ65PBbXprtxxf3jRe+o77911+Pcj9AZj9z8udbhdhD/6TuKPtP2d6Zu4F51YkAAAAAElFTkSuQmCC);
+    filter: hue-rotate(var(--folder-h)) saturate(var(--folder-s)) brightness(var(--folder-b));
+}*/
